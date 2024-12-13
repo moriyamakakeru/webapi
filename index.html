@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>天気予報アプリ</h1>
+        <div class="region-select">
+            <label for="region-select">地域を選択:</label>
+            <select id="region-select">
+                <option value="110000">埼玉県</option>
+                <option value="130000">東京都</option>
+                <option value="120000">千葉県</option>
+                <option value="140000">神奈川県</option>
+                <option value="200000">長野県</option>
+                <option value="190000">山梨県</option>
+            </select>
+        </div>
+        <div class="weather-cards">
+            <div class="weather-card">
+                <div class="date">Today</div>
+                <img id="today-icon" class="weather-icon" src="" alt="Weather Icon">
+                <div id="today" class="weather-info">--</div>
+            </div>
+            <div class="weather-card">
+                <div class="date">Tomorrow</div>
+                <img id="tomorrow-icon" class="weather-icon" src="" alt="Weather Icon">
+                <div id="tomorrow" class="weather-info">--</div>
+            </div>
+            <div class="weather-card">
+                <div class="date">Day After Tomorrow</div>
+                <img id="day-after-tomorrow-icon" class="weather-icon" src="" alt="Weather Icon">
+                <div id="day-after-tomorrow" class="weather-info">--</div>
+            </div>
+        </div>
+        <div id="updated-time" class="update-time">データ更新日: --</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
